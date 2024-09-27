@@ -1,0 +1,217 @@
+@font-face {
+    font-family: poppins;
+    src: url('other/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url('other/Poppins-Bold.ttf');
+}
+
+:root {
+    --bg-color: #22272E; /* rgb(15, 15, 15, 1) */
+    --dark-text-color: rgb(0, 0, 0);
+    --light-text-color: rgb(220, 220, 220);
+    --accent-color: rgba(255, 222, 0, 1); /* rgba(255, 123, 0, 1) */
+    --overlay-color: rgba(255, 222, 0, 0.85); /* rgba(255, 123, 0, 1) */
+}
+
+body{
+    font-family: poppins;
+    color: var(--light-text-color);
+    background-color: var(--bg-color);
+    margin: 0px;
+}
+
+#section {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.grid-container {
+    display: grid;
+    gap: 20px 20px;
+    justify-content: center; 
+}
+
+/* ----------------- HEADER ----------------- */
+
+div#header {
+    background-color: var(--accent-color);
+    color: var(--dark-text-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+div#header .introduction {
+    margin: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+}
+
+/* ----------------- SHOWREEL ----------------- */
+
+div#showreel {
+    padding-top: 20px;
+    padding-bottom: 20px;  
+}
+
+div#showreel video {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    border-radius: 15px;
+    border: 1px solid var(--light-text-color);
+}
+
+/* ----------------- PROJECTS ----------------- */
+
+div#projects {
+    padding-bottom: 40px;
+}
+
+div#projects .grid-container {
+    grid-template-columns: repeat(4, 20%);
+}
+
+div#projects .image-project, div#projects .image-project img, div#projects .overlay {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+div#projects .image-project {
+    display: inline-block;
+    position: relative;
+}
+  
+div#projects .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--overlay-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+div#projects .image-project:hover .overlay {
+    opacity: 1;
+}
+
+div#projects .overlay h1, .overlay p {
+    color: var(--dark-text-color);
+    text-align: center;
+    margin: 0.6vh 0;
+    padding: 0;
+}
+
+div#projects .overlay h1 {  
+    font-size: 2vw;
+}
+
+div#projects .overlay p {
+    font-size: 1.2vw;
+    padding: 0 0.6vh;
+}
+
+/* ----------------- TOOLS ----------------- */
+
+div#tools {
+    color: var(--dark-text-color);
+    background-color: var(--accent-color);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+div#tools .grid-container {
+    grid-template-columns: repeat(5, 10%);
+    align-items: center;
+}
+
+div#tools img {
+    height: 45px;
+    margin: 10px auto 10px auto;
+    display: flex;
+}
+
+div#tools p{
+    text-align: center;
+    margin: 0;
+}
+
+button {
+    height: 2.5em; /* 40dp / 16 = 2.5em */
+    text-align: center;
+    font-size: 16px; /* 18dp / 16 = 0.9em */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    border-width: 0;
+    width: auto;
+    margin: 20px 0 0 0;
+    background-color: rgba(0, 0, 0, 0);
+    min-width: 3em; /* 48dp / 16 = 3em */
+    padding: 0 0.75em; /* 12dp / 16 = 0.75em */
+    text-decoration: underline;
+}
+
+div#more-tools, div#more-lang, div#more-softwares {
+    margin-top: 20px;
+}
+
+/* ----------------- DESIGN ----------------- */
+
+div#design {
+    padding-top: 20px;
+    padding-bottom: 20px;   
+}
+
+div#design .pdf {
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+
+div#design iframe {
+    border-radius: 15px;
+}
+
+div#design img {
+    border-radius: 0px;
+    margin: 0 auto 20px auto;
+    display: block;
+    width: 80%;
+    border-radius: 15px;
+}
+
+/* ----------------- FOOTER ----------------- */
+
+div#footer {
+    color: var(--dark-text-color);
+    background-color: var(--accent-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+div#footer .grid-container {
+    grid-template-columns: repeat(2, 8%);
+    align-items: center;
+}
+
+div#footer img {
+    height: 45px;
+    margin: 10px auto 10px auto;
+    display: flex;
+}
+
+div#footer p{
+    text-align: center;
+    margin: 0;
+}
