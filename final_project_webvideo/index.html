@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="#">
+        <title>
+            Internet Vision
+        </title>
+    </head>
+
+    <body>
+
+        <!-- ----------------------------------------LOADING-PAGE-------------------------------------------- -->
+
+        <div id="loadingPage">
+            <img src="images/loading_icon.gif" alt="loading_icon">
+        </div>
+
+        <!-- ----------------------------------------POPUP-------------------------------------------- -->
+
+        <div class="popup" id="popup">
+            <div class="overlay"></div>
+            <div class="content">
+                <button class="close" onclick="closePopup('popup')">&#9587;</button>
+                <h1 id="popupTitle">Are you still there?</h1>
+                <p id="popupText">There is no need to check if you still there, except to collect personal data about your activity and waste your time if you were active.</p>
+            </div>
+        </div>
+
+        <div class="popup" id="popupCB">
+            <div class="overlay"></div>
+            <div class="content">
+                <h1 id="popupCbTitle">Your opinion is important.</h1>
+                <p id="popupCbText">Do you like the web site?</p>
+                <input type="checkbox" class="checkbox" id="confirmCB">
+                <button class="button" id="confirmPopupCB">Confirm</button>
+            </div>
+        </div>
+
+        <div class="popup" id="captcha">
+            <div class="overlay"></div>
+            <div class="content">
+                <h1>Are you human?</h1>
+                <del><p id="randomText"></p></del>
+                <button class="refresh" id="refreshCaptcha">&#8634;</button>
+                <input type="text" id="textField" value="Enter to verify">
+            </div>
+        </div>
+
+        <!-- ----------------------------------------FIXED-TOP-BAR-------------------------------------------- -->
+
+        <div class="top">
+            <div id="cursor"></div>
+
+            <img src="images/loading_icon.gif" alt="loading_icon">
+            <p>Internet Vision</p>
+        </div>
+
+        <!-- ----------------------------------------BODY-PAGE-------------------------------------------- -->
+
+        <div class="grid-container">
+
+            <!-- ----------------------------------------HEADER-------------------------------------------- -->
+            
+            <div class="header">
+                <h3 id="dateTime"></h3>
+                <h1>Internet Vision</h1>
+                <p>Welcome to Internet Vision, the web site where you can buy a lot of different products. If you also want to sell your own product, don't wait any longer. It's very simple: create your account, set your price and publish it. A 100% commission on your selling price is recovered by us. We are an honest company that earns money through the small commissions on your products, advertisements and the collect and sale of your personal data to multiple third parties at unbeatable prices</p>
+    
+                <p class="withoutDecoration"><u>Click </u><a onclick="openPopup('popupCB', 'popupCbTitle', 'Your opinion is important.','popupCbText', 'Do you like the web site?')">HERE</a> to get a gift.</p>
+
+                <button class="button" style="float: right;" onclick="openCaptcha()">Get the Gift</button>
+            </div>
+
+            <!-- ----------------------------------------MENU-------------------------------------------- -->
+
+            <div class="data">
+                <h3>We collect:</h2>
+                    <ul>
+                        <li><p id="nbOfClickText">Number of click: 0</p></li>
+                        <li><p id="lastButtonText">Last button: 0</p></li>
+                    </ul>
+                <h3>Time with cursor on:</h3>
+                    <ul>
+                        <li><p class="timeOverProduct"></p></li>
+                        <li><p class="timeOverProduct"></p></li>
+                        <li><p class="timeOverProduct"></p></li>
+                        <li><p class="timeOverProduct"></p></li>
+                    </ul> 
+            </div>
+
+            <div class="menu">  
+                <div style="display: none;">
+                    <img id="virus_green" src="images/virus_green.png" alt="virus_green">
+                    <img id="virus_red" src="images/virus_red.png" alt="virus_red">
+                </div>
+                <canvas id="canvas" height="600px" width="250px"></canvas>
+                <button id="virusButton">Cancel Download</button>
+            </div>
+
+            <!-- ----------------------------------------MAIN-------------------------------------------- -->
+
+            <div class="main" id="main">
+
+                <img src="images/ibm.gif" alt="ibm" onmouseover="openPopupAds()">
+
+                <div class="product">
+                    <h3>Time Machine</h3>
+                    <p>This wonderful machine will allow you to go back in time as much as you want. You will not be able to go in the future. Be carful of the grandfather paradox.</p>
+                    <p class="price">20 001.00 $</p>
+                    <hr>
+                    <p><a class="details" onclick="openPopup('popup', 'popupTitle', 'Are you still there?', 'popupText', 'There is no need to check if you still there, except to collect personal data about your activity and waste your time if you were active.')">More details</a></p>
+                </div>
+
+                <div class="product">
+                    <h3>Military Exoskeleton</h3>
+                    <p>This invention looks like iron man's armor. It will allow you to fly, shoot missiles, and lift heavy loads. This product is not approved but works perfectly.</p>
+                    <p class="price">1999.99 $</p>
+                    <hr>
+                    <p><a class="details" onclick="openCaptcha()">More details</a></p>
+                </div>
+
+                <div class="product">
+                    <h3>Beer Counter Fridge</h3>
+                    <p>Thanks to this fridge, evenings in front of a football match without beer are over. Get the most out of the game with reminders the day before a game.</p>
+                    <p class="price">175.00 $</p>
+                    <hr>
+                    <p><a class="details" onclick="openAlert('Do you really think that product is made for you. Think of your health and the planet. Protect the environment and work on your memory by remembering the number of beers in your fridge.')">More details</a></p>
+                </div>
+
+                <div class="product">
+                    <h3>iPhone 14 Pro Max</h3>
+                    <p>You are one of the 1% of visitors chosen to benefit from an exceptional 100% discount on the new iphone.</p>
+                    <p class="price">Free</p>
+                    <hr>
+                    <p><a class="details" onclick="openPopup('popup', 'popupTitle', 'Too slow!', 'popupText', 'You really thought you could benefit from this offer. It seemed more like a scam than a real promotion.')">More details</a></p>
+                </div>
+
+                <button class="button" id="movingBtn" style="position: relative;">Starts to earn money</button>
+
+            </div>  
+
+            <!-- ----------------------------------------RIGHT-------------------------------------------- -->
+
+            <div class="right">
+
+                <div class="ads" onmouseover="openPopupAds()">
+                    <img src="images/honda.jpg" alt="honda">
+                </div>
+                <div class="ads" onmouseover="openPopupAds()">
+                    <img src="images/coca_cola.jpg" alt="coca_cola">
+                </div>
+                <div class="ads" onmouseover="openPopupAds()">
+                    <img src="images/sap.jpg" alt="sap">
+                </div>
+                <div class="ads" onmouseover="openPopupAds()">
+                    <img src="images/nike.jpg" alt="nike">
+                </div>
+
+            </div>
+
+            <!-- -------------------------------------COOKIES-POPUP----------------------------------------- -->
+
+            <div id="cookiePopup">
+                <p>Under the pretext of proper operation of the site, you must accept all cookies so that we can collect all sorts of data about you to sell to other companies and offer you more advertising based on your activity.</p>
+                <label>Accept all cookies.</label>
+                <input type="checkbox" style="pointer-events: none;" checked disabled>
+                <label>Only necessary.</label>
+                <input type="checkbox" style="pointer-events: none;" disabled>
+                <label>Decline all cookies.</label>
+                <input type="checkbox" id="noCookies"><br>
+                <br>
+                <button class="confirmCookies" id="confirmCookies">Confirm</button>
+            </div>
+
+        </div>
+
+        <audio id="cursorSound"><source src="audios/rclick-13693.mp3" type="audio/mpeg"></audio>
+        <audio id="errorSound"><source src="audios/windows_error.mp3" type="audio/mpeg"></audio>
+        <audio id="notificationSound"><source src="audios/notification.mp3" type="audio/mpeg"></audio>
+                
+        <script src="code.js"></script>
+    </body>
+</html>

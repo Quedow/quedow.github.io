@@ -1,0 +1,422 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding-top: 30px;
+}
+
+.withoutDecoration{
+    text-decoration: none;
+    color: black;
+    cursor: text;
+    text-align: right;
+    margin: 0 0 10px 0;
+}
+
+/* --------------------------------------LOADING-PAGE------------------------------------------- */
+
+#loadingPage{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 3;
+    display: none;
+}
+
+#loadingPage img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: auto;
+}
+
+/* -----------------------------------------BUTTON------------------------------------------- */
+
+.button{
+    width: 150px;
+    height: 50px;
+    border: 0;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #ac3232;
+    cursor: pointer;
+}
+
+.button:hover{
+    color: rgb(213, 213, 213);
+    background: #872727;
+}
+
+/* -----------------------------------------POPUP------------------------------------------- */
+
+.popup .content h1{
+    color: #ac3232;
+}
+
+.popup p{
+    font-size: 20px;
+}
+
+.popup .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #f3f3f3;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.popup.active .overlay{
+    display: block;
+}
+
+.popup.active .content{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* -----------------------------------------CAPTCHA------------------------------------------- */
+
+.popup .content #randomText{
+    font-size: 32px;
+}
+
+.popup .content .refresh{
+    position: absolute;
+    top: 78%;
+    left: 88%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background: rgb(0, 0, 0);
+    color: white;
+    font-size: larger;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.popup .content #textField{
+    font-size: 24px;
+    color: gray;
+    font-style: italic;
+    padding-left: 15px;
+    border-radius: 45px;
+}
+
+/* -----------------------------------------CHECK-BOX------------------------------------------- */
+
+.popup .content .checkbox{
+    height: 30px;
+    width: 30px;
+    accent-color: #ac3232;
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+/* -----------------------------------------CLASSIC------------------------------------------- */
+
+.popup .close{
+    position: absolute;
+    top: 30px;
+    left: 34px;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* -----------------------------------------CURSOR------------------------------------------- */
+
+#cursor{
+    position: absolute;
+    right: 20px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background: rgba(167, 127, 55, 0.7);
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%; 
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* -----------------------------------------COOKIES------------------------------------------- */
+
+#cookiePopup{
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    text-align: center;
+    color: black;
+    border-top: solid;
+    border-width: 1px;
+    background-color: #f3f3f3;
+    bottom: 0;
+    z-index: 2;
+    scale: 0;
+}
+
+#cookiePopup p{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#cookiePopup button{
+    width: 100px;
+    height: 35px;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #ac3232;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#cookiePopup button:hover{
+    color: rgb(213, 213, 213);
+    background: #872727;
+}
+
+#cookiePopup input{
+    width: 20px;
+    height: 20px;
+    accent-color: #ac3232;
+    cursor: pointer;
+}
+
+#cookiePopup.active{
+    transition: all 300ms ease-in-out;
+    scale: 1;
+}
+
+/* -----------------------------------------HEADER------------------------------------------- */
+
+.header { 
+    grid-area: header; 
+    background-color: white;
+    padding: 20px;
+    text-align: justify;
+}
+
+.header h1{ 
+    margin: 0;
+}
+
+.header h3{ 
+    text-align: right;
+    margin: 0;
+}
+
+/* ------------------------------------MENU------------------------------------------- */
+
+.menu { 
+    grid-area: menu; 
+    background-color: white;
+}
+
+#canvas {
+    margin: 0;
+    width: 100%;
+    height: 94%;
+}
+
+#virusButton {
+    width: 100%;
+    height: 6%;
+    cursor: pointer;
+    background-color: #848484;
+    border: 0;
+    font-family: system-ui;
+    font-size: 20px;
+    color: white;
+}
+
+/* ------------------------------------MAIN------------------------------------------- */
+
+.main { 
+    grid-area: main;
+    background-color: white;
+    padding-bottom: 15px;
+}
+
+img{
+    width: 100%;
+}
+
+#movingBtn{
+    left: 15px;
+}
+
+/* ------------------------------------DATA------------------------------------------- */
+
+.data { 
+    grid-area: data;
+    background-color: black;
+    padding: 10px;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    color: white;
+    margin: 0;
+}
+
+.data p{ 
+    color: white;
+    margin: 0px;
+}
+
+/* ------------------------------------RIGHT------------------------------------------- */
+
+.right { 
+    grid-area: right; 
+}
+
+/* ------------------------------------GRID-TEMPLATE------------------------------------- */
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header right'
+    'data main right'
+    'menu main right';
+    grid-template-columns: 17% 1fr 24%;
+    grid-template-rows: auto auto 2fr;
+    gap: 2px;
+    background-color: #e2e2e2;
+}
+
+/* --------------------------------------PRODUCT---------------------------------------- */
+
+.product{
+    border-radius: 25px;
+    padding: 10px 20px 10px 20px;
+    border: solid;
+    border-width: 1px;
+    border-color: #e2e2e2;
+    background-color: #f3f3f3;
+    margin: 15px;
+}
+
+h3{
+    margin: 0 0 10px 0;
+    color: #ac3232;
+}
+
+.product a{
+    color: black;
+    text-decoration: underline;
+}
+
+.product a:hover{
+    color: #ac3232;
+    cursor: pointer;
+}
+
+.product .price{
+    color: #ac3232;
+    text-align: right;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product p{
+    margin: 0;
+}
+
+/* ------------------------------------ADS----------------------------------------- */
+
+.ads{
+    font-weight: bold;
+    color: white;
+    background-color: #ac3232; /* original rgb(16, 152, 225)*/
+    text-align: center;
+    display: grid;
+    margin: 15px;
+    height: auto;
+}
+
+.ads img{
+    width: 100%;
+    object-fit: fill;
+}
+
+/* ------------------------------------TOP--------------------------------------- */
+
+.top{
+    position: fixed;
+    background-color: #e2e2e2;
+    width: 100%;
+    height: 30px;
+    color: black;
+    top: 0;
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+.top p{
+    margin: 3.5px 0 0 30px;
+    font-weight: bold;
+}
+
+.top img{
+    position: absolute;
+    width: 20px;
+    margin: 5px 0 0 5px;
+}
+
+/* ------------------------------------ERROR-PAGE--------------------------------------- */
+
+.errorPage{
+    padding: 30px 0 0 60px;;
+}
+
+.errorPage p{
+    margin: 0;
+    font-size: 20px;
+}
+
+.errorPage h1{
+    margin: 0 0 20px 0;
+    color: #ac3232;
+}
