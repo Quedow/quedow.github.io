@@ -10,7 +10,7 @@ const apps = [
     {
         imgSrc: "images/icon/icon_shadow_garden.jpg",
         imgAlt: "icon_shadow_garden",
-        link: "https://github.com/Quedow/projects/blob/main/Shadow%20Garden/README.md",
+        link: "https://github.com/Quedow/Projects/blob/main/Shadow%20Garden/README.md",
         title: "Shadow Garden",
         type: "Smart Music Player - Flutter",
         date: "02/24 - 04/24"
@@ -18,7 +18,7 @@ const apps = [
     {
         imgSrc: "images/icon/icon_packshot_creator.png",
         imgAlt: "icon_packshot_creator",
-        link: "https://github.com/Quedow/projects/blob/main/Textile%20Packshot%20Image%20Creator/README.md",
+        link: "https://github.com/Quedow/Projects/blob/main/Textile%20Packshot%20Image%20Creator/README.md",
         title: "Packshot Creator",
         type: "Internship at Decathlon SportsLab - python",
         date: "05/23 - 09/23"
@@ -26,7 +26,7 @@ const apps = [
     {
         imgSrc: "images/icon/icon_disponibilite.png",
         imgAlt: "icon_disponibilite",
-        link: "https://github.com/Quedow/projects/blob/main/PLC%20Performance%20Calculator/README.md",
+        link: "https://github.com/Quedow/Projects/blob/main/PLC%20Performance%20Calculator/README.md",
         title: "PLC Performance Calculator",
         type: "Internship at Decathlon Logistics - python",
         date: "06/22 - 08/22"
@@ -34,7 +34,7 @@ const apps = [
     {
         imgSrc: "images/icon/icon_pill_dispenser.jpg",
         imgAlt: "icon_pill_dispenser",
-        link: "https://github.com/Quedow/projects/blob/main/Pill%20Dispenser/README.md",
+        link: "https://github.com/Quedow/Projects/blob/main/Pill%20Dispenser/README.md",
         title: "Pill Dispenser",
         type: "Health - Arduino & Unity C#",
         date: "01/22 - 05/22"
@@ -42,7 +42,7 @@ const apps = [
     {
         imgSrc: "images/icon/icon_internet_vision.png",
         imgAlt: "icon_internet_vision",
-        link: "https://quedow.github.io/final_project_webvideo/index",
+        link: "https://quedow.github.io/final-project-webvideo/index",
         title: "Internet Vision",
         type: "Parodic website - HTML/CSS/Js",
         date: "08/22 - 12/22"
@@ -50,7 +50,7 @@ const apps = [
     {
         imgSrc: "images/icon/icon_more_projects.png",
         imgAlt: "icon_more_projects",
-        link: "https://github.com/Quedow/projects/blob/main/README.md",
+        link: "https://github.com/Quedow/Projects/blob/main/README.md",
         title: "More Projects",
         type: "Mobile apps, algorithms"
     }
@@ -92,7 +92,7 @@ const games = [
     {
         imgSrc: "images/icon/icon_my_game_compnion.jpg",
         imgAlt: "icon_my_game_compnion",
-        link: "https://github.com/Quedow/projects/blob/main/My%20Game%20Companion/README.md",
+        link: "https://github.com/Quedow/Projects/blob/main/My%20Game%20Companion/README.md",
         title: "My Games Companion",
         type: "Companion - Unity C#",
         date: "07/21 - 01/22"
@@ -100,7 +100,7 @@ const games = [
     {
         imgSrc: "images/icon/icon_color_back.jpg",
         imgAlt: "icon_color_back",
-        link: "https://github.com/Quedow/projects/blob/main/Color%20Back/README.md",
+        link: "https://github.com/Quedow/Projects/blob/main/Color%20Back/README.md",
         title: "Color Back",
         type: "Platformer - Unity C#",
         date: "01/22 - Break"
@@ -108,7 +108,7 @@ const games = [
     {
         imgSrc: "images/icon/icon_hacking_point.jpg",
         imgAlt: "icon_hacking_point",
-        link: "https://github.com/Quedow/Hacking-Point-Minigame",
+        link: "https://github.com/Quedow/hacking_point_minigame",
         title: "Hacking Point",
         type: "Arcade - python",
         date: "05/22 - 07/22"
@@ -132,7 +132,7 @@ const games = [
     {
         imgSrc: "images/icon/icon_quiz.jpg",
         imgAlt: "icon_quiz",
-        link: "https://github.com/Quedow/Quiz-of-what-you-want",
+        link: "https://github.com/Quedow/QUIZ-OF-WHAT-YOU-WANT",
         title: "Quiz of what you want",
         type: "Quiz - JavaFx",
         date: "04/21 - 48h"
