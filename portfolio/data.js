@@ -1,5 +1,13 @@
 const apps = [
     {
+        imgSrc: "images/icon/icon_skuld.jpg",
+        imgAlt: "icon_skuld",
+        link: "https://github.com/Quedow/skuld/blob/main/README.md",
+        title: "Skuld",
+        type: "Gamify Tasks App - Flutter",
+        date: "10/24 - Now"
+    },
+    {
         imgSrc: "images/icon/icon_auchan_business.png",
         imgAlt: "icon_auchan_business",
         link: "",
@@ -13,7 +21,7 @@ const apps = [
         link: "https://github.com/Quedow/Projects/blob/main/Shadow%20Garden/README.md",
         title: "Shadow Garden",
         type: "Smart Music Player - Flutter",
-        date: "02/24 - 04/24"
+        date: "02/24 - Now"
     },
     {
         imgSrc: "images/icon/icon_packshot_creator.png",
@@ -57,6 +65,14 @@ const apps = [
 ];
 
 const games = [
+    {
+        imgSrc: "images/icon/icon_tarot_game.png",
+        imgAlt: "icon_tarot_game",
+        link: "https://github.com/Quedow/tarot-game/blob/main/README.md",
+        title: "Tarot Game",
+        type: "Tarot Card Game - React",
+        date: "01/24 - Now"
+    },
     {
         imgSrc: "images/icon/icon_rootual.png",
         imgAlt: "icon_rootual",
