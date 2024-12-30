@@ -71,7 +71,7 @@ const games = [
         link: "https://github.com/Quedow/tarot-game/blob/main/README.md",
         title: "Tarot Game",
         type: "Tarot Card Game - React",
-        date: "01/24 - Now"
+        date: "11/23 - Now"
     },
     {
         imgSrc: "images/icon/icon_rootual.png",
