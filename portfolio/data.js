@@ -2,7 +2,7 @@ const apps = [
     {
         imgSrc: "images/icon/icon_skuld.jpg",
         imgAlt: "icon_skuld",
-        link: "https://github.com/Quedow/skuld/blob/main/README.md",
+        link: "https://github.com/Quedow/Projects/blob/main/Skuld/README.md",
         title: "Skuld",
         type: "Gamify Tasks App - Flutter",
         date: "10/24 - Now"
@@ -18,7 +18,7 @@ const apps = [
     {
         imgSrc: "images/icon/icon_shadow_garden.jpg",
         imgAlt: "icon_shadow_garden",
-        link: "https://github.com/Quedow/Projects/blob/main/Shadow%20Garden/README.md",
+        link: "https://github.com/Quedow/shadow_garden/blob/master/README.md",
         title: "Shadow Garden",
         type: "Smart Music Player - Flutter",
         date: "02/24 - Now"
